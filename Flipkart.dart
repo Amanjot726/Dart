@@ -17,20 +17,19 @@ ShoppingCart: Item{itemName, itemPrice, itemDiscount}, promocode, discount, tota
 */
 
 class Item {
-  String? Item_Name;
-  String? Item_Category;
+  String? Item_Name, Item_Category;
   double? Item_Price;
   int? Item_Quantity;
 
-  Item({
-    this.Item_Category,
-    this.Item_Name,
-    this.Item_Price,
-    this.Item_Quantity
-  });
+  Item(
+      {this.Item_Category,
+      this.Item_Name,
+      this.Item_Price,
+      this.Item_Quantity});
 
   void Show_Details() {
-    print("\n  Item Name : ${Item_Name}\n  Item Price : \u20B9 ${Item_Price}\n  Item Quantity : ${Item_Quantity}");
+    print(
+        "\n  Item Name : ${Item_Name}\n  Item Price : \u20B9 ${Item_Price}\n  Item Quantity : ${Item_Quantity}");
   }
 }
 
@@ -39,14 +38,10 @@ class Category {
   int? Number_of_Items;
   List<Item>? Items;
 
-  Category({
-    this.Title, 
-    this.Number_of_Items,
-    this.Items
-  });
+  Category({this.Title, this.Number_of_Items, this.Items});
 
   void ShowItems() {
-    print("\n\n"+"*" * 8 + "Category => ${Title}" + "*" * 8);
+    print("\n\n" + "*" * 8 + "Category => ${Title}" + "*" * 8);
     Items!.forEach((Item) {
       Item.Show_Details();
     });
@@ -54,22 +49,20 @@ class Category {
 }
 
 class OnlineShopping {
-  String? Name;
-  String? Website;
-  int? CustomerCare_num;
-  int? No_of_Categories;
+  String? Name, Website;
+  int? CustomerCare_num, No_of_Categories;
   List<Category>? Categories;
 
-  OnlineShopping({
-    this.Name,
-    this.Website,
-    this.CustomerCare_num,
-    this.No_of_Categories,
-    this.Categories
-  });
+  OnlineShopping(
+      {this.Name,
+      this.Website,
+      this.CustomerCare_num,
+      this.No_of_Categories,
+      this.Categories});
 
   void Show_Categories() {
-    print("Name of Shopping Website = ${Name}\nWebsite = ${Website}\nCustomer Care Number = ${CustomerCare_num}");
+    print(
+        "Name of Shopping Website = ${Name}\nWebsite = ${Website}\nCustomer Care Number = ${CustomerCare_num}");
     Categories!.forEach((element) {
       element.ShowItems();
     });
