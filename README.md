@@ -1,29 +1,12 @@
-## Flutter:
-Flutter is an open-source UI software development kit created by Google. It is used to develop cross platform applications for Android, iOS, Linux, Mac, Windows, Google Fuchsia, and the web from a single codebase. 
+## Dart
 
-## Path of learning:
-
-- Tour of Dart. 
-- Flutter Widgets
-- Assignments-->UI Replications
-- Flutter and Firebase -->Multimedia and DB Operations
-- Project Activity
-
-## Initial Setup
-
-1. JDk and its Path setup
-2. Android Studio
-3. Plugin-->FLutter in Android Studio
-4. Flutter SDK
-5. Link the SDK path in Android Studio
+Dart is a programming language designed for client development, such as for the web and mobile apps. It is developed by Google and can also be used to build server and desktop applications. Dart is an object-oriented, class-based, garbage-collected language with C-style syntax. 
 
 ## Pre-requirements:
 
-- 8GB RAM
-
-- i3/i5 Processor
+- Nothing
 
 ## Online site
 
-dartpad.dev
+- [dartpad.dev](https://dartpad.dev/)
 
